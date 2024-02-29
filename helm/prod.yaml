@@ -1,3 +1,6 @@
 component: frontend
 service_type: LoadBalancer
 port: 80
+PARAMETERS: "frontend.prod.appVersion,appVersion"
+schema:
+  enabled: false
