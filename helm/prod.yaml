@@ -12,3 +12,6 @@ ingress:
   className: "nginx"
   hosts:
     - host: www.rdevops74.online
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
