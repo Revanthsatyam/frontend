@@ -6,3 +6,9 @@ schema:
   enabled: false
 
 replicaCount: 2
+
+ingress:
+  enabled: true
+  className: "nginx"
+  hosts:
+    - host: www.rdevops74.online
