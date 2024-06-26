@@ -5,3 +5,5 @@ env: prod
 PARAMETERS: "frontend.prod.appVersion,appVersion"
 schema:
   enabled: false
+
+replicaCount: 2
