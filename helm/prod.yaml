@@ -7,3 +7,13 @@ schema:
   enabled: false
 
 replicaCount: 2
+
+recordName: www.rdevops74.online
+ingress:
+  enabled: true
+  className: "nginx"
+  hosts:
+    - host: www.rdevops74.online
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
