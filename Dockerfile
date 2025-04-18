@@ -1,9 +1,6 @@
 FROM     nginx:latest
-RUN      mkdir /app
-WORKDIR  /app
-COPY     * /app
+RUN      rm -rf /usr/share/nginx/html/*
 COPY     roboshop.conf /etc/nginx/default.d/roboshop.conf
 COPY     nginx.conf /etc/nginx/nginx.conf
-RUN      rm -rf /usr/share/nginx/html/*
-RUN      mv /app/* /usr/share/nginx/html/
+RUN      mv ./ /usr/share/nginx/html/
 CMD      ["nginx", "-g", "daemon off;"]
