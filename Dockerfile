@@ -7,7 +7,7 @@
 FROM     nginx:latest
 RUN      mkdir /app
 WORKDIR  /app
-COPY     . /app
+COPY     ./ /app
 COPY     roboshop.conf /etc/nginx/conf.d/default.conf
 COPY     nginx.conf /etc/nginx/nginx.conf
 RUN      rm -rf /usr/share/nginx/html/*
