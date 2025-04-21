@@ -1,0 +1,5 @@
+component: frontend
+service_type: LoadBalancer
+port: 80
+container_port: 80
+target_port: 80
