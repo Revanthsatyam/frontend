@@ -1,5 +1,5 @@
 component: frontend
-service_type: LoadBalancer
+service_type: NodePort
 port: 80
 container_port: 80
 target_port: 80
