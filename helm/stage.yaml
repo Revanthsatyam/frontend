@@ -1,0 +1,15 @@
+component: frontend-stage
+service_type: NodePort
+port: 80
+container_port: 80
+target_port: 80
+PARAMETERS_ENABLED: false
+env: stage
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 500Mi
+  requests:
+    cpu: 500m
+    memory: 500Mi
