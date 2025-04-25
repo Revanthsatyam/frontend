@@ -4,7 +4,7 @@ port: 80
 container_port: 80
 target_port: 80
 PARAMETERS_ENABLED: false
-env: stage
+env: prod
 
 resources:
   limits:
