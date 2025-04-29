@@ -1,8 +1,6 @@
 name: Frontend application
 
 on:
-  push:
-    branches: [ "stage" ]
   pull_request:
     branches: [ "stage" ]
 
