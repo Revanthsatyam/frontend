@@ -1,4 +1,4 @@
-name: Python application
+name: Frontend application
 
 on:
   push:
@@ -96,7 +96,7 @@ jobs:
     - name: Checkout APP code
       uses: actions/checkout@v4
       with:
-        repository: Revanthsatyam/payment
+        repository: Revanthsatyam/frontend
         path: APP
           
     - name: Checkout CHART code
