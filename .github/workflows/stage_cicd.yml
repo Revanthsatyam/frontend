@@ -113,5 +113,5 @@ jobs:
     - name: Deploy with Helm
       run: |
         helm upgrade --install frontend ./CHART \
-          -f APP/helm/prod.yaml \
+          -f APP/helm/stage.yaml \
           --set image_tag=${{ steps.build-number.outputs.tag }}
